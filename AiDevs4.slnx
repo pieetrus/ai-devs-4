@@ -1,0 +1,9 @@
+<Solution>
+  <Folder Name="/SolutionFolder/">
+    <File Path=".env" />
+    <File Path=".gitignore" />
+    <File Path="README.md" />
+  </Folder>
+  <Project Path="01-PeopleTask/01-PeopleTask.csproj" />
+  <Project Path="AiDevs.Shared/AiDevs.Shared.csproj" />
+</Solution>
