@@ -22,4 +22,12 @@ public class AiDevsClient(string? apiKey = null)
         var response = await Http.PostAsJsonAsync(VerifyEndpoint, payload, JsonOptions);
         return await response.Content.ReadAsStringAsync();
     }
+
+    public async Task<Stream> DownloadDataFileAsync(string filename)
+    {
+        var url = new Uri($"https://hub.ag3nts.org/data/{_apiKey}/{filename}");
+        var response = await Http.GetAsync(url);
+        response.EnsureSuccessStatusCode();
+        return await response.Content.ReadAsStreamAsync();
+    }
 }

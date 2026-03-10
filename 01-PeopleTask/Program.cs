@@ -2,9 +2,10 @@ using _01_PeopleTask;
 using _01_PeopleTask.Services;
 using AiDevs.Shared;
 
-var csvPath = args.Length > 0 ? args[0] : "data/people.csv";
+var client = new AiDevsClient();
+await using var csvStream = await client.DownloadDataFileAsync("people.csv");
 
-var people = PeopleFilter.LoadAndFilter(csvPath);
+var people = PeopleFilter.LoadAndFilter(csvStream);
 Console.WriteLine($"Filtered {people.Count} people from CSV.");
 
 var tagging = await new JobTaggerAgent().TagJobsAsync(people);

@@ -6,9 +6,9 @@ namespace _01_PeopleTask.Services;
 
 internal static class PeopleFilter
 {
-    public static List<PersonRow> LoadAndFilter(string csvPath)
+    public static List<PersonRow> LoadAndFilter(Stream stream)
     {
-        using var reader = new StreamReader(csvPath);
+        using var reader = new StreamReader(stream);
         using var csv = new CsvReader(reader, new CsvConfiguration(CultureInfo.InvariantCulture)
         {
             PrepareHeaderForMatch = a => a.Header.ToLowerInvariant()
