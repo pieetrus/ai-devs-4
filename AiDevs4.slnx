@@ -5,5 +5,6 @@
     <File Path="README.md" />
   </Folder>
   <Project Path="01-PeopleTask/01-PeopleTask.csproj" />
+  <Project Path="02-FindHim/02-FindHim.csproj" />
   <Project Path="AiDevs.Shared/AiDevs.Shared.csproj" />
 </Solution>

@@ -1,6 +1,9 @@
+using System.Text.Json;
 using _01_PeopleTask;
 using _01_PeopleTask.Services;
 using AiDevs.Shared;
+
+DotEnv.Load();
 
 var client = new AiDevsClient();
 await using var csvStream = await client.DownloadDataFileAsync("people.csv");
@@ -18,6 +21,11 @@ var answer = tagging.Results
     .ToList();
 
 Console.WriteLine($"People with 'transport' tag: {answer.Count}");
+
+const string suspectsFile = "02-FindHim/data/suspects.json";
+Directory.CreateDirectory(Path.GetDirectoryName(suspectsFile)!);
+await File.WriteAllTextAsync(suspectsFile, JsonSerializer.Serialize(answer, new JsonSerializerOptions { WriteIndented = true }));
+Console.WriteLine($"Suspects saved to {suspectsFile}");
 
 var result = await new AiDevsClient().VerifyAsync("people", answer);
 

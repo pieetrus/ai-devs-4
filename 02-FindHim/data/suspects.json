@@ -1,0 +1,52 @@
+[
+  {
+    "Name": "Cezary",
+    "Surname": "\u017Burek",
+    "Gender": "M",
+    "Born": 1987,
+    "City": "Grudzi\u0105dz",
+    "Tags": [
+      "transport"
+    ]
+  },
+  {
+    "Name": "Jacek",
+    "Surname": "Nowak",
+    "Gender": "M",
+    "Born": 1991,
+    "City": "Grudzi\u0105dz",
+    "Tags": [
+      "transport"
+    ]
+  },
+  {
+    "Name": "Oskar",
+    "Surname": "Sieradzki",
+    "Gender": "M",
+    "Born": 1993,
+    "City": "Grudzi\u0105dz",
+    "Tags": [
+      "transport"
+    ]
+  },
+  {
+    "Name": "Wojciech",
+    "Surname": "Bielik",
+    "Gender": "M",
+    "Born": 1986,
+    "City": "Grudzi\u0105dz",
+    "Tags": [
+      "transport"
+    ]
+  },
+  {
+    "Name": "Wac\u0142aw",
+    "Surname": "Jasi\u0144ski",
+    "Gender": "M",
+    "Born": 1986,
+    "City": "Grudzi\u0105dz",
+    "Tags": [
+      "transport"
+    ]
+  }
+]
