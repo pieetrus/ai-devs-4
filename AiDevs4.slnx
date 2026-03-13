@@ -8,5 +8,6 @@
   <Project Path="02-FindHim/02-FindHim.csproj" />
   <Project Path="03-Proxy/03-Proxy.csproj" />
   <Project Path="04-SendIt/04-SendIt.csproj" />
+  <Project Path="05-Railway/05-Railway.csproj" />
   <Project Path="AiDevs.Shared/AiDevs.Shared.csproj" />
 </Solution>
